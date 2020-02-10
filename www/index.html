@@ -34,18 +34,21 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
 
-        <link rel="stylesheet" href="">
+        <!-- <link rel="stylesheet" href=""> -->
         <title>Studio.io</title>
     </head>
     <body>
-        <div class="video">
-            <video id="video" src=""></video>
-        </div>
+        <h1>The Current Playing Song</h1>
+        
+
+        <audio id="audioPlayer" controls autoplay class="hidden">
+            <source src="139.162.229.38:8000/content" type="audio/mp3">
+            </audio>
 
 
-        <div class="audio">
-            <video id="audio" src=""></video>
-        </div>
+        <!-- <div class="audio">
+            <video id="aud" src=""></video>
+        </div> -->
         
         
         <!-- <div class="app">
@@ -57,9 +60,9 @@
         </div> -->
 
         <script type="text/javascript" src="cordova.js"></script>
-        <!-- <script type="text/javascript" src="js/index.js"></script> -->
+        <script type="text/javascript" src="js/index.js"></script>
 
-        <script>
+        <!-- <script>
             var app = {
                 // Application Constructor
                 initialize: function() {
@@ -72,6 +75,7 @@
                 // 'pause', 'resume', etc.
                 onDeviceReady: function() {
                     this.receivedEvent('deviceready');
+
                 },
 
                 // Update DOM on a Received Event
@@ -88,7 +92,7 @@
             };
             app.initialize();
 
-        </script>
+        </script> -->
     </body>
 
     
